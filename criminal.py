@@ -454,7 +454,7 @@ class Criminal:
             try:
                 Delete=messagebox.askyesno('Delete','Are you sure Delete this criminal record')
                 if Delete>0:
-                    conn=mysql.connector.connect(host='localhost',user='root',password='Ankit@1234',database='criminals')
+                    conn=mysql.connector.connect(host='localhost',user='root',password='********',database='criminals')
                     my_cursor=conn.cursor()  
                     sql='delete from criminal_data where Case_id=%s'
                     value=(self.var_case_id.get(),)
